@@ -1,154 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-  <head>
-    <title>Bernard Eshun Portfolio</title>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" type="x-icon" href="programming.jpg">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <meta name="description" content="Hey,my name is Bernard Eshun,welcome to my Portfolio website">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>  
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-      <!-- Intro -->
-      <div id="intro">
-        <h1>
-          BERNARD ESHUN<br />
-          PORTFOLIO
-        </h1>
-        <p>
-          I work at the intersection of software engineering and infrastructure, building data-driven applications while architecting, deploying, and managing the systems that power them. As a Database Developer and Data Scientist, I design efficient data models and pipelines, working extensively with SQL, Excel, Tableau, and Python to handle data ingestion, transformation, analysis, and visualization. On the backend, I develop scalable web applications using Django and Node.js, with a strong focus on performance, security, and direct database integration. Beyond application code, I design and manage server environments, cloud infrastructure, and deployment workflows using platforms such as Amazon Web Services, Render, DigitalOcean and Heroku. My experience spans server provisioning, environment configuration, networking fundamentals, and application deployment, ensuring reliability from development to production. I’m deeply invested in DevOps practices bridging development and operations to deliver systems that are scalable, maintainable, and resilient. Curious about the solutions I’ve built? Scroll down and explore my projects.
-          <a href="https://www.linkedin.com/in/bernard-eshun-a12b85233/" target="_blank" >@Bernardeshun</a> 
-        </p>
-        <ul class="actions">
+
+<head>
+  <title>Bernard Eshun Portfolio</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="x-icon" href="programming.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Hey,my name is Bernard Eshun,welcome to my Portfolio website">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper" class="fade-in">
+    <!-- Intro -->
+    <div id="intro">
+      <h1>
+        BERNARD ESHUN<br />
+        PORTFOLIO
+      </h1>
+      <p>
+        I work at the intersection of software engineering and infrastructure, building data-driven applications while
+        architecting, deploying, and managing the systems that power them. As a Database Developer and Data Scientist, I
+        design efficient data models and pipelines, working extensively with SQL, Excel, Tableau, and Python to handle
+        data ingestion, transformation, analysis, and visualization. On the backend, I develop scalable web applications
+        using Django and Node.js, with a strong focus on performance, security, and direct database integration. Beyond
+        application code, I design and manage server environments, cloud infrastructure, and deployment workflows using
+        platforms such as Amazon Web Services, Render, DigitalOcean and Heroku. My experience spans server provisioning,
+        environment configuration, networking fundamentals, and application deployment, ensuring reliability from
+        development to production. I’m deeply invested in DevOps practices bridging development and operations to
+        deliver systems that are scalable, maintainable, and resilient. Curious about the solutions I’ve built? Scroll
+        down and explore my projects.
+        <a href="https://www.linkedin.com/in/bernard-eshun-a12b85233/" target="_blank">@Bernardeshun</a>
+      </p>
+      <ul class="actions">
+        <li>
+          <a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+      <a class="logo">Bernard Eshun</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="links">
+        <li class="active"><a href="index.html">Projects</a></li>
+
+      </ul>
+      <ul class="icons">
+        <li>
+          <a href="https://www.linkedin.com/in/bernard-eshun-a12b85233" class="icon brands alt fa-linkedin"
+            target="_blank"><span class="label">linkedin</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/beshungh" class="icon brands alt fa-github" target="_blank"><span
+              class="label">GitHub</span></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Featured Post -->
+      <article class="post featured">
+        <header class="major">
+          <h2>
+            <a>
+              SUPPLY CHAIN ANALYSIS <br />
+            </a>
+          </h2>
+          <h3> Situation </h3>
+          <p><em>The Global Superstore had been experiencing inefficiencies in its supply chain, resulting in increased
+              costs and delays in product deliveries. The management team required a thorough analysis of their
+              operations to identify bottlenecks and areas for improvement. The dataset included sales, returns, and
+              shipping information over several years, providing a comprehensive overview of the store's performance
+              across different regions and product categories. Key questions aimed at addressing these challenges
+              included identifying regions incurring the highest shipping costs and comparing them to others,
+              understanding variations in average shipping costs across product categories, analysing the distribution
+              of orders among different priorities and their impact on profitability, and identifying profit-driving
+              product categories and sub-categories while devising strategies to optimize the product mix or marketing
+              efforts for underperforming categories. Additionally, the company sought to determine which products had
+              the highest return rates and assess the impact of returns on overall sales and profit, highlighting
+              concerns about customer satisfaction, product quality, and revenue optimization.</em></p>
+          <h3>Task</h3>
+          <p>My primary goal was to extract actionable insights and generate detailed reports for stakeholders, enabling
+            data-driven decisions to enhance the company's performance. The analysis involved working with multiple
+            datasets: "customers.csv," "orders.csv," "products.csv," and "returns.csv."</p>
+          <h3>actions</h3>
+          <p>To ensure data integrity, I started by cleaning currency symbols from columns using Excel. This step was
+            crucial to prevent errors in future database queries.
+            I then developed a Python script in Jupyter Notebook to automate the import of .csv files into a PostgreSQL
+            database. Utilizing libraries such as os, shutil, NumPy, pandas, and psycopg2,the script:
+            Organized files into a dedicated directory,Read CSV files into Pandas DataFrames, addressing encoding issues
+            and Dynamically generated PostgreSQL-compatible table schemas and imported data using the high-performance
+            COPY command.</p>
+          <p>I conducted EDA in PostgreSQL to handle large datasets effectively, identifying key metrics and trends that
+            informed decision-making. </p>
+          <p>Using Tableau, I created interactive and comprehensive reports, making data interpretation straightforward
+            for stakeholders. </p>
+          <h3>Results</h3>
+          <p>Shipping Costs Analysis: I identified regions with the highest shipping costs and their cost-to-profit
+            ratios, leading to strategic recommendations for optimizing shipping operations. </p>
+          <p>Product Category Analysis: By calculating the average shipping costs for different product categories, I
+            revealed significant variations. This informed strategies for pricing adjustments and logistics
+            optimization. </p>
+          <p>Order Priority Analysis: Analyzing the distribution of orders by priority level and their impact on
+            profitability provided insights into optimizing order handling processes to enhance overall profitability.
+          </p>
+          <p>Profitability Analysis: I identified high-profit and underperforming product categories, offering targeted
+            recommendations to enhance profitability and optimize the product mix. </p>
+          <p>Return Rate Analysis: Determining the products with the highest return rates and their impact on sales and
+            profit led to strategies for improving product quality and customer satisfaction. </p>
+          <h3>Conclusion</h3>
+          <p>This project highlighted my proficiency in managing complex datasets and conducting thorough analysis. It
+            also showcased my capabilities in automating data processes and generating actionable insights. To see the
+            detailed methodology and codes that supported this project, please click on the "VIEW PROJECT" below. </p>
+
+
+
+        </header>
+        <a class="image main"><img src="images/Supply.jpg" alt="" /></a>
+        <ul class="actions special">
           <li>
-            <a
-              href="#header"
-              class="button icon solid solo fa-arrow-down scrolly"
-              >Continue</a
-            >
+            <a href="https://github.com/beshungh/Sales-Supply-Chain-Analysis" target="_blank" class="button large">VIEW
+              PROJECT</a>
           </li>
         </ul>
-      </div>
+      </article>
 
-      <!-- Header -->
-      <header id="header">
-        <a class="logo">Bernard Eshun</a>
-      </header>
 
-      <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="index.html">Projects</a></li>
-          
-        </ul>
-        <ul class="icons">
-          <li>
-            <a href="https://www.linkedin.com/in/bernard-eshun-a12b85233" class="icon brands alt fa-linkedin" target="_blank"
-              ><span class="label">linkedin</span></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/beshungh" class="icon brands alt fa-github" target="_blank"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main">
-        <!-- Featured Post -->
-        <article class="post featured">
-          <header class="major">
+      <section class="posts">
+        <article>
+          <header>
             <h2>
-              <a
-              
-              >
-                SUPPLY CHAIN ANALYSIS <br />
-              </a>
+              <a>CUSTOMER CHURN ANALYSIS AND PREDICTION <br /></a>
             </h2>
-            <h3> Situation </h3>
-            <p><em>The Global Superstore had been experiencing inefficiencies in its supply chain, resulting in increased costs and delays in product deliveries. The management team required a thorough analysis of their operations to identify bottlenecks and areas for improvement. The dataset included sales, returns, and shipping information over several years, providing a comprehensive overview of the store's performance across different regions and product categories. Key questions aimed at addressing these challenges included identifying regions incurring the highest shipping costs and comparing them to others, understanding variations in average shipping costs across product categories, analysing the distribution of orders among different priorities and their impact on profitability, and identifying profit-driving product categories and sub-categories while devising strategies to optimize the product mix or marketing efforts for underperforming categories. Additionally, the company sought to determine which products had the highest return rates and assess the impact of returns on overall sales and profit, highlighting concerns about customer satisfaction, product quality, and revenue optimization.</em></p>
-            <h3>Task</h3>
-            <p>My primary goal was to extract actionable insights and generate detailed reports for stakeholders, enabling data-driven decisions to enhance the company's performance. The analysis involved working with multiple datasets: "customers.csv," "orders.csv," "products.csv," and "returns.csv."</p>
-            <h3>actions</h3>
-            <p>To ensure data integrity, I started by cleaning currency symbols from columns using Excel. This step was crucial to prevent errors in future database queries.
-            I then developed a Python script in Jupyter Notebook to automate the import of .csv files into a PostgreSQL database. Utilizing libraries such as os, shutil, NumPy, pandas, and psycopg2,the script:
-            Organized files into a dedicated directory,Read CSV files into Pandas DataFrames, addressing encoding issues and Dynamically generated PostgreSQL-compatible table schemas and imported data using the high-performance COPY command.</p>
-            <p>I conducted EDA in PostgreSQL to handle large datasets effectively, identifying key metrics and trends that informed decision-making. </p>
-            <p>Using Tableau, I created interactive and comprehensive reports, making data interpretation straightforward for stakeholders. </p>
-            <h3>Results</h3>
-            <p>Shipping Costs Analysis: I identified regions with the highest shipping costs and their cost-to-profit ratios, leading to strategic recommendations for optimizing shipping operations. </p>
-            <p>Product Category Analysis: By calculating the average shipping costs for different product categories, I revealed significant variations. This informed strategies for pricing adjustments and logistics optimization. </p>
-            <p>Order Priority Analysis: Analyzing the distribution of orders by priority level and their impact on profitability provided insights into optimizing order handling processes to enhance overall profitability.</p>
-            <p>Profitability Analysis: I identified high-profit and underperforming product categories, offering targeted recommendations to enhance profitability and optimize the product mix. </p>
-            <p>Return Rate Analysis: Determining the products with the highest return rates and their impact on sales and profit led to strategies for improving product quality and customer satisfaction. </p>
-            <h3>Conclusion</h3>
-            <p>This project highlighted my proficiency in managing complex datasets and conducting thorough analysis. It also showcased my capabilities in automating data processes and generating actionable insights. To see the detailed methodology and codes that supported this project, please click on the "VIEW PROJECT" below. </p>
-
-
-
           </header>
-          <a
-          
-            class="image main"><img src="images/Supply.jpg" alt=""/></a>
+          <a target="_blank" class="image fit"><img src="images/Customer_Churn.png" alt="" /></a>
+          <p>
+            This project involved analyzing customer churn data to identify patterns and predict future churn using
+            machine learning techniques. I utilized Python libraries such as Pandas, NumPy, Matplotlib, Seaborn, and
+            Scikit-learn for data manipulation, visualization, and model building. The analysis included data cleaning,
+            exploratory data analysis (EDA), feature engineering, and model evaluation. I implemented various
+            classification algorithms, including Logistic Regression, Decision Trees, Random Forests, and Gradient
+            Boosting Machines (GBM), to predict customer churn. The models were evaluated based on accuracy, precision,
+            recall, and F1-score to ensure robust performance. The insights gained from this analysis provided
+            actionable recommendations for customer retention strategies and highlighted key factors contributing to
+            churn. To explore the detailed methodology and code used in this project, please click on the "VIEW PROJECT"
+            link below.
+          </p>
           <ul class="actions special">
-            <li>
-              <a
-                href="https://github.com/beshungh/Sales-Supply-Chain-Analysis" target="_blank"
-                class="button large"
-                >VIEW PROJECT</a
-              >
-            </li>
+            <li><a href="https://github.com/beshungh/Customer_Churn_Analysis_Prediction" target="_blank"
+                class="button">VIEW PROJECT</a></li>
           </ul>
         </article>
 
-      
-        <section class="posts">
-          <article>
-            <header>
-              <h2>
-                <a
-                  >CUSTOMER CHURN ANALYSIS AND PREDICTION <br /></a
-                >
-              </h2>
-            </header>
-            <a target="_blank" class="image fit"
-              ><img src="images/Customer_Churn.png" alt=""
-            /></a>
-            <p>
-            </p>
-            <ul class="actions special">
-              <li><a href="https://github.com/beshungh/Customer_Churn_Analysis_Prediction" target="_blank" class="button">VIEW PROJECT</a></li>
-            </ul>
-          </article>
-          <article>
-            
-            
-            <header>
-              <h2>
-                <a href="#"
-                  >SecureGen-RANDOM PASSWORD GENERATOR WEB APPLICATION WITH DJANGO <br /></a
-                >
-              </h2>
-            </header>
-            <a href="#" class="image fit"
-              ><img src="images/Password Generator.jpg" alt=""
-            /></a>
-            <p>
-              Project completed and pending hosting. For a video demo, feel free to contact me via the email below.
-            </p>
-            <ul class="actions special">
-              <li><a href="#" class="button">VIEW PROJECT</a></li>
-            </ul>
-          </article>
-          <article>
+        <article>
+          <header>
+            <h2>
+              <a href="#"> <br />Multi-Vendor E-commerce Platform</a>
+            </h2>
+          </header>
+          <a href="#" class="image fit"><img src="images/vendora.png"
+              alt="Vendora Multi Vendor Ecommerce Application" /></a>
+          <p>
+            Vendora is a full-featured multi-vendor e-commerce application built with the MERN stack.
+            It supports vendor onboarding, product management, secure escrow-based payments, order
+            tracking, real-time messaging, and automated vendor settlements. The platform includes
+            customer, vendor, and admin dashboards, with Paystack payment integration.
+            The project is fully completed and currently in the testing phase.
+          </p>
+          <ul class="actions special">
+            <li><a href="https://vendora-mern-frontend.onrender.com/" target="_blank" class="button">VIEW PROJECT
+                DETAILS</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <h2> <a href="#"> Vendora POS<br /> Multi-Tenant Point of Sale System </a> </h2>
+          </header>
+          </header>
+          <a href="#" class="image fit"><img src="images/VendoraPOS.png" alt="Vendora POS System Dashboard" /></a>
+          <p>
+            Vendora POS is an enterprise-grade, multi-tenant Point of Sale system built with the MERN stack. The system
+            is approximately 95% complete and fully functional, with a production-ready backend and a near-complete
+            frontend. It supports multi-store operations, role-based access control, real-time inventory tracking,
+            complete POS transactions, sales management, and customer loyalty tracking.
+          </p>
+          <p> The backend is 100% complete with over 56 RESTful API endpoints, implementing authentication, RBAC,
+            multi-tenancy, inventory management, POS operations, sales tracking, and customer management. The frontend
+            includes a fully functional POS terminal, dashboards, and complete CRUD interfaces for products, categories,
+            inventory, sales, customers, and employees. </p>
+          <p> The system is currently in the testing phase and is ready for deployment. Remaining work is focused on
+            optional enhancements such as reporting dashboards, settings pages, and advanced analytics. </p>
+          <p>
+            The application is not yet deployed. A full local demo (screen recording or live walkthrough)
+            is available on request.
+          </p>
+          <ul class="actions special">
+            <li><a href="" target="_blank" class="button">REQUEST LOCAL DEMO</a></li>
+          </ul>
+        </article>
+
+
+        <article>
+          <header>
+            <h2>
+              <a href="#">SecureGen-RANDOM PASSWORD GENERATOR WEB APPLICATION WITH DJANGO <br /></a>
+            </h2>
+          </header>
+          <a href="#" class="image fit"><img src="images/Password Generator.jpg" alt="" /></a>
+          <p>
+            Project completed and pending hosting. For a local demo, feel free to contact me via the email below.
+          </p>
+          <ul class="actions special">
+            <li><a href="#" class="button">VIEW PROJECT</a></li>
+          </ul>
+        </article>
+
+
+
+
+
+
+
+
+        <!-- <article>
            
            
             <header>
@@ -226,42 +312,40 @@
             <ul class="actions special">
               <li><a href="#" class="button">VIEW PROJECT</a></li>
             </ul>
-          </article>
-        </section>
+          </article> -->
+      </section>
 
-   
 
-      
-        <section class="split contact">
-          <section class="alt">
-            <h3>Location</h3>
-            <p>Ghana, Accra</p>
-          </section>
-          <section>
-            <h3>Phone</h3>
-            <p><a>(+233) 55-814-3347</a></p>
-          </section>
-          <section>
-            <h3>Email</h3>
-            <p><a href="mailto:beshungh@gmail.com">beshungh@gmail.com</a></p>
-          </section>
-          <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-             
-              <li>
-                <a href="https://www.linkedin.com/in/bernard-eshun-a12b85233" class="icon brands alt fa-linkedin" target="_blank"
-                  ><span class="label">linkedin</span></a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/beshungh" class="icon brands alt fa-github" target="_blank"
-                  ><span class="label">GitHub</span></a
-                >
-              </li>
-            </ul>
-          </section>
+
+
+      <section class="split contact">
+        <section class="alt">
+          <h3>Location</h3>
+          <p>Ghana, Accra</p>
         </section>
+        <section>
+          <h3>Phone</h3>
+          <p><a>(+233) 55-814-3347</a></p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:beshungh@gmail.com">beshungh@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+
+            <li>
+              <a href="https://www.linkedin.com/in/bernard-eshun-a12b85233" class="icon brands alt fa-linkedin"
+                target="_blank"><span class="label">linkedin</span></a>
+            </li>
+            <li>
+              <a href="https://github.com/beshungh" class="icon brands alt fa-github" target="_blank"><span
+                  class="label">GitHub</span></a>
+            </li>
+          </ul>
+        </section>
+      </section>
       </footer>
       <a href="#">Jump to Top</a>
 
@@ -282,5 +366,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
